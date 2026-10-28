@@ -102,7 +102,7 @@ const typedText = document.querySelector('#typed-text');
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 if (typedText && !prefersReducedMotion) {
-  const phrases = ['Juegos 3D/2D.', 'Experiencias interactivas.', 'IA de enemigos.', 'Interfaces de usuario.', 'Apliaciones AR/VR', 'Simulaciones.'];
+  const phrases = ['Juegos 3D/2D.', 'Exp interactivas.', 'IA de enemigos.', 'Interfaces de usuario.', 'Apliaciones AR/VR', 'Simulaciones.'];
   let phraseIndex = 0;
   let characterIndex = 0;
   let deleting = false;
