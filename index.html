@@ -1,427 +1,151 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--=============== LINE ICONS ===============-->
-    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
-    <link href="fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
-
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
-
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <title>Portafolio Cristian</title>
-</head>
-<body>
-    <!--=============== HEADER ===============-->
-    <header class="header" id="header">
-        <!-- nav -->
-        <nav class="nav container padd-15">
-            <!-- nav logo -->
-            <a href="#" class="nav-logo">
-                <h2>castaneadev</h2>
-            </a>
-            <!-- nav menu -->
-            <div class="nav-menu" id="nav-menu">
-                <!-- nav list -->
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link active-link">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">Sobre mí</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#portfolio" class="nav-link">Portafolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">Contacto</a>
-                    </li>
-                </ul>
-                <!-- nav close -->
-                <div class="nav-close" id="nav-close">
-                    <i class="lni lni-close"></i>
-                </div>
-            </div>
-            <!-- nav btn -->
-            <div class="nav-btns">
-                <!-- theme change btn -->
-                <i class="lni lni-pallet change-theme" id="theme-button"></i>
-                <!-- toggle btn -->
-                <div class="nav-toggle" id="nav-toggle">
-                    <i class="lni lni-grid-alt"></i>
-                </div>
-            </div>
-        </nav>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f3f1dc" />
+    <meta name="description" content="Portafolio de desarrollo de videojuegos, pixel art y mundos por explorar." />
+    <title>castaneadev — portafolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="pixel-backdrop" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Tu Nombre, inicio">
+        <span class="brand-icon" aria-hidden="true"><img class="pixel-heart-icon" src="assets/pixel-heart.svg" alt="" /></span>
+        <span class="brand-name">Cristian Castañeda<span class="blink">_</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#proyectos">Mis proyectos</a>
+        <a class="nav-cta" href="#contacto">Contacto <span aria-hidden="true">↗</span></a>
+      </nav>
     </header>
 
-    <!--=============== MAIN ===============-->
-    <main class="main-content">
-        <!--=============== HOME ===============-->
-        <section class="home" id="home">
-            <div class="container">
-                <!-- intro -->
-                <div class="intro">
-                    <!-- avatar image -->
-                    <img src="assets/img/avatar-1.png" alt="Bolby">
-                    <!-- info -->
-                    <h1>Cristian Castañeda</h1>
-                    <span>😺 Programador<span class="info-text"> en desarrollo de videojuegos</span></span>
-                    <!-- social icons -->
-                    <ul class="social-icons">
-                        <li><a href="https://devcrxs.itch.io" target="_blank"><i class="fab fa-itch-io"></i></a></li>
-                        <li><a href="https://github.com/devcrxs" target="_blank"><i class="fab fa-github"></i></a></li>
-                        <li><a href="https://wa.link/vscd42" target="_blank"><i class="lni lni-whatsapp"></i></a></li>
-                    </ul>
-                    <!-- button -->
-                    <div>
-                        <a href="#contact" class="button_page">Contactame</a>
-                    </div>
-                    <!-- scroll down mouse wheel -->
-                    <div class="scroll-down">
-                        <a href="#" class="mouse-wrapper">
-                            <span class="mouse">
-                                <span class="wheel"></span>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--=============== About ===============-->
-        <section class="about section" id="about">
-            <div class="container">
-                <!-- section title -->
-                <h2 class="section-title padd-15">Sobre mí</h2>
-                <div class="row">
-                    <div class="about-img padd-15">
-                        <!-- avatar img -->
-                        <img src="assets/img/avatar-2.png" alt="perfil img" style="padding-top:30px">
-                    </div>
-                    <div class="about-content padd-15">
-                        <div class="rounded">
-                            <div class="row">
-                                <div class="about-text padd-15">
-                                    <!-- about text -->
-                                    <p>¡Hola soy Cristian! 😺 Soy un desarrollador de videojuegos con 3 años de experiencia en programación haciendo uso de Unity Engine y Unreal Engine. Especializado en programacion de UI.</p>
-                                    <div>
-                                        <a href="assets/CV Cristian Camilo Castañeda Benavides.pdf" download="CV Cristian Castañeda" class="btn btn-default">Descarga mi CV</a>
-                                    </div>
-                                </div>
-                                <div class="skills padd-15">
-                                    <div class="row">
-                                        <!-- skill item -->
-                                        <div class="skill-item">
-                                            <h4><i class="fab fa-unity"></i> Unity Engine</h4>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 85%; background: rgb(255,209,92);"></div>
-                                                <div class="skill-percent">85%</div>
-                                            </div>
-                                        </div>
-                                        <!-- skill item -->
-                                        <div class="skill-item">
-                                            <h4><i class="lni lni-game"></i> Unreal Engine </h4>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 40%; background: rgb(255,76,96);"></div>
-                                                <div class="skill-percent">40%</div>
-                                            </div>
-                                        </div>
-                                        <!-- skill item -->
-                                        <div class="skill-item">
-                                            <h4><i class="lni lni-graph"></i> C#</h4>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 60%; background: rgb(108,108,229);"></div>
-                                                <div class="skill-percent">60%</div>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--=============== Services ===============-->
-        <!--=============== Portfolio ===============-->
-        <section class="portfolio section" id="portfolio">
-            <div class="container">
-                <!-- section title -->
-                <h2 class="section-title padd-15">Portafolio</h2>
-                <div class="row">
-                    <div class="portfolio-filter padd-15">
-                        <div class="portfolio-filter-inner">
-                            <button type="button" class="active" data-filter="all">Todo</button>
-                            <button type="button" data-filter="juegos">Videojuegos Profesionales</button>
-                            <button type="button" data-filter="casuales">Casuales</button>
-                            <button type="button" data-filter="advergaming">Advergaming</button>
-                            <button type="button" data-filter="aplicaciones">Aplicaciones</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                     <!-- portfolio item -->
-                     
-                    <div class="portfolio-item padd-15" data-category="juegos">
-                        <div class="portfolio-item-inner">
-                            <div class="card__item portfolio-item-thumbnail">
-                                <img src="assets/img/headerAstor.jpg" alt="Monolith: Requiem of the Ancients">
-                                <div class="mask"></div>
-                                <div class="card__content">
-                                    <h4 class="card__title">Astor: Blade of the Monolith</h4>
-                                    <a href="https://store.steampowered.com/app/1989320/Astor_Blade_of_the_Monolith/" target="_blank" class="button_proyect">Ver</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                     <!-- portfolio item -->
-                    <div class="portfolio-item padd-15" data-category="advergaming">
-                        <div class="portfolio-item-inner">
-                            <div class=" card__item portfolio-item-thumbnail">
-                                <img src="assets/img/ColorFul.jpg" alt="Colorful Mountains" style="border-radius: 20px;">
-                                <div class="mask"></div>
-                                <div class="card__content">
-                                    <h4 class="card__title">Colorful Mountains</h4>
-                                    <a href="https://www.instagram.com/reel/C21WHimudyP/?igsh=MTEyZXd3a3hhNmQ1NA%3D%3D" target="_blank" class="button_proyect">Ver</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- portfolio item -->
-                    <div class="portfolio-item padd-15" data-category="casuales">
-                        <div class="portfolio-item-inner">
-                            <div class=" card__item portfolio-item-thumbnail">
-                                <img src="assets/img/PullUps.jpg" alt="PullUpsPixel" style="border-radius: 20px;">
-                                <div class="mask"></div>
-                                <div class="card__content">
-                                    <h4 class="card__title">Pull Ups Pixel</h4>
-                                    <a href="https://devcrxs.itch.io/pull-ups-pixel" target="_blank" class="button_proyect">Ver</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- portfolio item -->
-                    <div class="portfolio-item padd-15" data-category="aplicaciones">
-                        <div class="portfolio-item-inner">
-                            <div class=" card__item portfolio-item-thumbnail">
-                                <img src="assets/img/MoviesApp.jpg" alt="JeyMoviesApp" style="border-radius: 20px;">
-                                <div class="mask"></div>
-                                <div class="card__content">
-                                    <h4 class="card__title">JeyMovies</h4>
-                                    <a href="https://devcrxs.itch.io/jeymovies" target="_blank" class="button_proyect">Ver</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- portfolio item -->
-                    <div class="portfolio-item padd-15" data-category="casuales">
-                        <div class="portfolio-item-inner">
-                            <div class=" card__item portfolio-item-thumbnail">
-                                <img src="assets/img/ColorDev.jpg" alt="ColorDev" style="border-radius: 20px;">
-                                <div class="mask"></div>
-                                <div class="card__content">
-                                    <h4 class="card__title">ColorDev</h4>
-                                    <a href="https://devcrxs.itch.io/colordev" target="_blank" class="button_proyect">Ver</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- portfolio item -->
-                    <div class="portfolio-item padd-15" data-category="casuales">
-                        <div class="portfolio-item-inner">
-                            <div class=" card__item portfolio-item-thumbnail">
-                                <img src="assets/img/BaldBoy.jpg" alt="BaldBoy" style="border-radius: 20px;">
-                                <div class="mask"></div>
-                                <div class="card__content">
-                                    <h4 class="card__title">BaldBoy</h4>
-                                    <a href="https://www.instagram.com/p/CPpDQFRHO02/?igsh=dm1xejAzNno1NnVt" target="_blank" class="button_proyect">Ver</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- portfolio item -->
-                    <div class="portfolio-item padd-15" data-category="advergaming">
-                        <div class="portfolio-item-inner">
-                            <div class=" card__item portfolio-item-thumbnail">
-                                <img src="assets/img/BitSpeed.jpg" alt="BitSpeed"  style="border-radius: 20px;">
-                                <div class="mask"></div>
-                                <div class="card__content">
-                                    <h4 class="card__title">BitSpeed</h4>
-                                    <a href="https://devcrxs.itch.io/bitspeed" target="_blank" class="button_proyect">Ver</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- portfolio item -->
-                    <div class="portfolio-item padd-15" data-category="casuales">
-                        <div class="portfolio-item-inner">
-                            <div class=" card__item portfolio-item-thumbnail">
-                                <img src="assets/img/GolfHold.jpg" alt="GolfHold" style="border-radius: 20px;">
-                                <div class="mask"></div>
-                                <div class="card__content">
-                                    <h4 class="card__title">GolfHold</h4>
-                                    <a href="https://devcrxs.itch.io/golf-hold" target="_blank" class="button_proyect">Ver</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- portfolio item -->
-                    <div class="portfolio-item padd-15" data-category="casuales">
-                        <div class="portfolio-item-inner">
-                            <div class=" card__item portfolio-item-thumbnail">
-                                <img src="assets/img/SelfExplosive.jpg" alt="SelfExplosive" style="border-radius: 20px;">
-                                <div class="mask"></div>
-                                <div class="card__content">
-                                    <h4 class="card__title">Self Explosive</h4>
-                                    <a href="https://devcrxs.itch.io/self-explosive" target="_blank" class="button_proyect">Ver</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- portfolio item -->
-                    <div class="portfolio-item padd-15" data-category="aplicaciones">
-                        <div class="portfolio-item-inner">
-                            <div class=" card__item portfolio-item-thumbnail">
-                                <img src="assets/img/SummonerGG.jpg" alt="SummonerGG" style="border-radius: 20px;">
-                                <div class="mask"></div>
-                                <div class="card__content">
-                                    <h4 class="card__title">SummonerGG</h4>
-                                    <a href="https://devcrxs.itch.io/summonergg" target="_blank" class="button_proyect">Ver</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- portfolio item -->
-                    <div class="portfolio-item padd-15" data-category="aplicaciones">
-                        <div class="portfolio-item-inner">
-                            <div class=" card__item portfolio-item-thumbnail">
-                                <img src="assets/img/ARLiving.jpg" alt="ARLiving" style="border-radius: 20px;">
-                                <div class="mask"></div>
-                                <div class="card__content">
-                                    <h4 class="card__title">ARLiving</h4>
-                                    <a href="https://devcrxs.itch.io/ar-living" target="_blank" class="button_proyect">Ver</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-item padd-15" data-category="aplicaciones">
-                        <div class="portfolio-item-inner">
-                            <div class=" card__item portfolio-item-thumbnail">
-                                <img src="assets/img/PixelShibuya.png" alt="PixelShibuya" style="border-radius: 20px;">
-                                <div class="mask"></div>
-                                <div class="card__content">
-                                    <h4 class="card__title">PixelShibuya</h4>
-                                    <a href="https://devcrxs.itch.io/pixelshibuya" target="_blank" class="button_proyect">Ver</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--=============== Testimonial ===============-->
-        <section class="section" id="contact">
-            <div class="container">
-                <!-- section title -->
-                <h2 class="section-title padd-15">Contacto</h2>
-                <!-- testimonial wrapper -->
-                <div class="swiper testimonial-wrapper">
-                    <div class="swiper-wrapper">
-                        <!-- testimonial item -->
-                        <div class="testimonial-item swiper-slide">
-                            <div class="thumb">
-                                <img src="assets/img/InstagramLogo.png" alt="">
-                            </div>
-                            <h3>Instagram</h3>
-                            <div class="comment">Si te gusta mi trabajo puedes contactarme por instagram como: @castaneadev 👍</div>
-                        </div>
-                        <!-- testimonial item -->
-                        <div class="testimonial-item swiper-slide">
-                            <div class="thumb">
-                                <img src="assets/img/GmailLogo.png" alt="">
-                            </div>
-                            <h3>Gmail</h3>
-                            <div class="comment">Si te gusta mi trabajo puedes contactarme por 
-                                Gmail como: crishack4@ 🔥</div>
-                        </div>
-                        <!-- testimonial item -->
-                        <div class="testimonial-item swiper-slide">
-                            <div class="thumb">
-                                <img src="assets/img/WhatsappLogo.png" alt="">
-                            </div>
-                            <h3>Whatsapp</h3>
-                            <div class="comment">Si te gusta mi trabajo puedes contactarme por Whatsapp: +57 3105436882 📞</div>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-        </section>
-        <!--=============== Footer ===============-->
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-text padd-15">
-                    <p>&copy; Portafolio castaneadev 2025</p>
-                </div>
-            </div>
-        </footer>
-    </main>
-    <!--=============== Theme Customize ===============-->
-    <div class="customize-theme">
-        <div class="card">
-            <h2>Personaliza tu vista</h2>
-            <p>Administre su tamaño de fuente, color y fondo</p>
-            <!-- font size -->
-            <div class="font-size">
-                <h3>Tamaño de fuente</h3>
-                <div>
-                    <h6>Aa</h6>
-                    <div class="choose-size">
-                        <span class="font-size-1"></span>
-                        <span class="font-size-2"></span>
-                        <span class="font-size-3 active"></span>
-                        <span class="font-size-4"></span>
-                    </div>
-                    <h3>Aa</h3>
-                </div>
-            </div>
-            <!-- color -->
-            <div class="color">
-                <h3>Color</h3>
-                <div class="choose-color">
-                    <span class="color-1"></span>
-                    <span class="color-2"></span>
-                    <span class="color-3 active"></span>
-                    <span class="color-4"></span>
-                    <span class="color-5"></span>
-                </div>
-            </div>
-            <!-- background -->
-            <div class="background">
-                <h3>Fondo</h3>
-                <div class="choose-bg">
-                    <div class="bg-1 active">
-                        <span></span>
-                        <h5 for="bg-1">Claro</h5>
-                    </div>
-                    <div class="bg-3">
-                        <span></span>
-                        <h5 for="bg-3">Oscuro</h5>
-                    </div>
-                </div>
-            </div>
+    <main>
+      <section class="hero section-wrap" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-led"></span> JUGADOR 1 <span class="slash">/</span> DESARROLLADOR DE VIDEOJUEGOS E INGENIERO DE SISTEMAS</p>
+          <h1 id="hero-title">
+            <span class="headline-static">Desarrollo</span>
+            <span class="typed-line"><span class="sr-only">Juegos 2D.</span><span class="title-highlight" id="typed-text" aria-hidden="true">Juegos 3D.</span><span class="typing-cursor" aria-hidden="true"></span></span>
+          </h1>
+          <p class="hero-lede">
+            ¡Hola soy <strong>Cristian!</strong> Desarrollador de videojuegos con 4 años de experiencia en Unity y Unreal Engine. Especializado en comportamientos de enemigos y programación e implementación de UI.
+          </p>
+          <div class="tool-row" aria-label="Herramientas y afinidades">
+            <span class="tool-chip"><b class="chip-unreal">U</b> Unreal Engine</span>
+            <span class="tool-chip"><b class="chip-unity">◈</b> Unity Engine</span>
+          </div>
+          <a class="save-file" href="assets/CV_Cristian_Castaneda.pdf" target="_blank" rel="noopener" aria-label="Abrir CV de Cristian Castañeda en una pestaña nueva">
+            <span class="save-icon" aria-hidden="true"><img class="save-cv-icon" src="assets/cv-pixel-icon.svg" alt="" /></span>
+            <span class="save-copy"><small>CRISTIAN CASTAÑEDA</small><strong>CV_01.DOWNLOAD</strong></span>
+            <span class="save-level">LV. 25</span>
+            <span class="save-hearts" aria-hidden="true">♥♥♥</span>
+          </a>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#proyectos">Explorar proyectos <span aria-hidden="true">↓</span></a>
+          </div>
         </div>
-    </div>
 
-    <!--=============== SWIPER JS ===============-->
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    
-    <!--=============== JS ===============-->
-    <script src="assets/js/main.js"></script>
-</body>
+        <div class="hero-console-wrap">
+          <div class="handheld" role="group" aria-label="Consola portátil retro con el retrato pixel art de Cristian">
+            <div class="console-screen-frame">
+              <div class="screen-status"><span class="device-led" aria-hidden="true"></span><span>CRISTIAN CASTAÑEDA</span><span>♥ ♥ ♥</span></div>
+              <div class="console-screen">
+                <span class="screen-sun" aria-hidden="true"></span>
+                <span class="screen-cloud cloud-one" aria-hidden="true"></span>
+                <span class="screen-cloud cloud-two" aria-hidden="true"></span>
+                <span class="screen-hill hill-back" aria-hidden="true"></span>
+                <span class="screen-hill hill-front" aria-hidden="true"></span>
+                <span class="screen-flower flower-a" aria-hidden="true"></span>
+                <span class="screen-flower flower-b" aria-hidden="true"></span>
+                <span class="screen-grass" aria-hidden="true"></span>
+                <img class="screen-photo" src="assets/1-retro-cutout.png" alt="Retrato pixel art de Cristian con filtro monocromático verde" />
+              </div>
+              <span class="screen-print">2026</span>
+            </div>
+            <div class="console-brand"><strong>GAME BOY</strong></div>
+            <div class="console-lower">
+              <div class="dpad" aria-hidden="true"><i></i><b></b></div>
+              <span class="select-start" aria-hidden="true"><span><i></i>SELECT</span><span><i></i>START</span></span>
+              <div class="action-buttons" aria-hidden="true"><i>B</i><i>A</i></div>
+              <span class="speaker-slots" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+            </div>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#proyectos"><span></span> BAJA PARA EXPLORAR</a>
+      </section>
+
+      <section class="projects section-wrap" id="proyectos" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <div>
+            <h2 id="projects-title">Mis <span class="title-highlight">proyectos</span></h2>
+          </div>
+        </div>
+
+        <div class="project-toolbar">
+          <div class="filter-list" role="group" aria-label="Filtrar proyectos">
+            <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">Todos <span data-count="all">10</span></button>
+            <button class="filter-button" type="button" data-filter="unity" aria-pressed="false">Unity <span data-count="unity">0</span></button>
+            <button class="filter-button" type="button" data-filter="unreal" aria-pressed="false">Unreal <span data-count="unreal">0</span></button>
+          </div>
+          <label class="search-box">
+            <span aria-hidden="true">⌕</span>
+            <span class="sr-only">Buscar proyecto</span>
+            <input id="project-search" type="search" placeholder="Buscar un proyecto…" autocomplete="off" />
+          </label>
+        </div>
+
+        <p class="project-status" id="project-status" aria-live="polite">Cargando proyectos…</p>
+        <div class="project-grid" id="project-grid" aria-label="Lista de proyectos"></div>
+      </section>
+
+      <section class="contact section-wrap" id="contacto" aria-labelledby="contact-title">
+        <div class="contact-panel">
+          <div class="contact-copy">
+            <p class="eyebrow">NUEVA MISIÓN</p>
+            <h2 id="contact-title">¿Creamos una<br /><span>nueva aventura?</span></h2>
+            <p>Disponible para colaborar en videojuegos y todo tipo de proyectos. Cuéntame qué mundo quieres construir.</p>
+            <a class="button button-light" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=crishack4%40gmail.com" target="_blank" rel="noopener noreferrer">Iniciar conversación <span aria-hidden="true">↗</span></a>
+            <div class="social-links" aria-label="Redes y portafolio">
+              <a href="https://github.com/devcrxs" target="https://github.com/devcrxs" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+              <a href="https://devcrxs.itch.io/" target="https://devcrxs.itch.io/" rel="noreferrer">itch.io <span aria-hidden="true">↗</span></a>
+              <a href="https://www.tiktok.com/@castaneax?lang=or-IN" target="https://www.tiktok.com/@castaneax?lang=or-IN" rel="noreferrer">Tiktok <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <div class="contact-side">
+            <div class="game-screens" aria-label="Personajes pixel art de Pokémon y Zelda en pantallas estilo Game Boy">
+              <article class="game-screen-card">
+                <div class="game-screen-heading"><span>CRIMSON MOON</span><span>PIXEL ART</span></div>
+                <div class="game-screen-view">
+                  <img class="authentic-sprite crimson-screenshot" src="assets/crimsonpixel.png" alt="Ilustración pixel art de Crimson Moon" loading="lazy" />
+                </div>
+                <p class="game-screen-caption">CRIMSON MOON</p>
+                <a class="sprite-credit" href="https://store.steampowered.com/app/4317690/Crimson_Moon/?l=spanish" target="_blank" rel="noreferrer">Steam link ↗</a>
+              </article>
+              <article class="game-screen-card">
+                <div class="game-screen-heading"><span>ASTOR</span><span>PIXEL ART</span></div>
+                <div class="game-screen-view">
+                  <img class="authentic-sprite astor-screenshot" src="assets/astorpixel.png" alt="Ilustración pixel art de Astor: Blade of the Monolith" loading="lazy" />
+                </div>
+                <p class="game-screen-caption">ASTOR BLADE OF THE MONOLITH</p>
+                <a class="sprite-credit" href="https://store.steampowered.com/app/1989320/Astor_Blade_of_the_Monolith/" target="_blank" rel="noreferrer">Steam link ↗</a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#inicio"><span class="brand-icon" aria-hidden="true"><img class="pixel-heart-icon" src="assets/pixel-heart.svg" alt="" /></span><span class="brand-name">Cristian Castañeda<span class="blink">_</span></span></a>
+      <p>Hecho con <span class="footer-heart">♥</span> y varias vidas extra.</p>
+      <a class="back-top" href="#inicio">VOLVER ARRIBA ↑</a>
+    </footer>
+  </body>
 </html>
